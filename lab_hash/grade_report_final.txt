@@ -1,0 +1,30 @@
+Grading r50989 by pondxtr2 committed on Sun Nov 13 22:11:03 CST 2016
+Monad Autograder
+Testing lab_hash at 2016-11-14 00:28:35
+
+"Most software today is very much like an Egyptian pyramid with millions of bricks piled on top of each other, with no structural integrity, but just done by brute force and thousands of slaves." ~ Alan Kay
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+testRemoveEASY . [6 pts]  - passed
+testRemoveHard . [10 pts] - passed
+testResizeOnce . [7 pts]  - passed
+testResizeAll  . [11 pts] - passed
+testInsertEasy . [6 pts]  - passed
+testInsertHard . [10 pts] - passed
+testAnagramsSC . [8 pts]  - passed
+testAnagramsLP . [8 pts]  - passed
+testWordCountSC  [8 pts]  - passed
+testWordCountLP  [8 pts]  - passed
+testLogfileParse [18 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

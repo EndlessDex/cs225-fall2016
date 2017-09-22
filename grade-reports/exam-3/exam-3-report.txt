@@ -1,0 +1,31 @@
+Exam 3 report for Adam Poindexter
+=================================
+
+Scores
+------
+
+  Problem          Points
+  -------------- --------
+  mc-cpp3-001a          0
+  mc-cpp3-002c          4
+  mc-cpp3-003b          0
+  mc-cpp3-004f          4
+  mc-cpp3-005d          4
+  mc-cpp3-006g          4
+  mc-cpp3-007b          4
+  mc-cpp3-008e          4
+  queue-02              9
+  tree-01               9
+
+Each coding question was worth 9 points.
+
+Total score: 42/50 (84%)
+
+Code Problem Test Output
+------------------------
+
+See `test-queue.txt` and `test-tree.txt` for autograder test outputs.
+
+Questions / problems of a specific nature, please email mattox.
+Questions / problems that look like they would have affected a lot of
+people, please post on Piazza.

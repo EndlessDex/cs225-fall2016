@@ -1,0 +1,24 @@
+Grading r10144 by pondxtr2 committed on Sun Sep 11 13:41:53 CDT 2016
+Monad Autograder
+Testing lab_memory at 2016-09-12 00:43:06
+
+"I think it's hacky, but maybe it's just good." ~ Sean Massung
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+test_constructor (asan) [5 pts]  - passed
+test_allocate (asan)  . [5 pts]  - passed
+test_printrooms (asan)  [20 pts] - passed
+test_any_output . . . . [30 pts] - passed
+test_correct_output . . [40 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

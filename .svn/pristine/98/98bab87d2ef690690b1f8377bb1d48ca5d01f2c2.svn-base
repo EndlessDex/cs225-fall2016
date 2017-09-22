@@ -1,0 +1,47 @@
+CD to .. 
+/home/mattox/repos/cs225/fa16-exam2-grading/submissions/pondxtr2
+###############################
+##                           ##
+##     Grading question      ##
+##                           ##
+###############################
+Grader dir is /home/mattox/repos/cs225/fa16-exam2-grading/code-grading/scripts
+qid is hard-02
+variant is
+test_dir is /home/mattox/repos/cs225/fa16-exam2-grading/code-grading/scripts/tests/hard-02/
+fullTmpDir = /home/mattox/repos/cs225/fa16-exam2-grading/submissions/pondxtr2/grade-.mfZ
+:: Compiling...
+g++ -std=c++0x -c -g -O0 -Wall -Wextra -Wno-unused-function   -c -o hard.o hard.cpp
+hard.cpp: In function ‘void merge(LinkedList*, LinkedList*, LinkedList*)’:
+hard.cpp:7:21: error: request for member ‘head’ in ‘lst1’, which is of pointer type ‘LinkedList*’ (maybe you meant to use ‘->’ ?)
+  Node* temp1 = lst1.head;
+                     ^~~~
+hard.cpp:8:21: error: request for member ‘head’ in ‘lst2’, which is of pointer type ‘LinkedList*’ (maybe you meant to use ‘->’ ?)
+  Node* temp2 = lst2.head;
+                     ^~~~
+hard.cpp:15:7: error: request for member ‘append’ in ‘mrg’, which is of pointer type ‘LinkedList*’ (maybe you meant to use ‘->’ ?)
+   mrg.append(temp1->data);
+       ^~~~~~
+hard.cpp:20:7: error: request for member ‘append’ in ‘mrg’, which is of pointer type ‘LinkedList*’ (maybe you meant to use ‘->’ ?)
+   mrg.append(temp2.data);
+       ^~~~~~
+hard.cpp:20:20: error: request for member ‘data’ in ‘temp2’, which is of pointer type ‘Node*’ (maybe you meant to use ‘->’ ?)
+   mrg.append(temp2.data);
+                    ^~~~
+hard.cpp:24:1: error: expected ‘}’ at end of input
+ }
+ ^
+<builtin>: recipe for target 'hard.o' failed
+make: *** [hard.o] Error 1
+Could not compile hard.o.
+
+Grade for question : 0/100
+
+
+~ ~ ~
+
+Grade: 0
+
+Details:
+test,grade
+_compiled,0

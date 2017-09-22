@@ -1,0 +1,37 @@
+Grading r20861 by pondxtr2 committed on Sun Sep 25 23:49:27 CDT 2016
+Monad Autograder
+Testing lab_gdb at 2016-09-26 00:27:57
+
+"I can calculate the motions of the heavenly bodies, but not the madness of people." ~ Isaac Newton
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+testInsertFront  . . . . . . . [5 pts]  - passed
+testInsertBack . . . . . . . . [15 pts] - passed
+testDestructor10 (asan)  . . . [10 pts] - passed
+testDestructor37 (asan)  . . . [10 pts] - passed
+testReverse20_size . . . . . . [3 pts]  - passed
+testReverse20  . . . . . . . . [5 pts]  - passed
+testReverse37_size . . . . . . [3 pts]  - passed
+testReverse37  . . . . . . . . [5 pts]  - passed
+testReverse_memory (asan)  . . [4 pts]  - passed
+testReverseEmpty_memory (asan) [5 pts]  - passed
+testReverse20_memory (asan)  . [5 pts]  - passed
+testShuffle20_size . . . . . . [5 pts]  - passed
+testShuffle20  . . . . . . . . [4 pts]  - passed
+testShuffle37_size . . . . . . [5 pts]  - passed
+testShuffle37  . . . . . . . . [4 pts]  - passed
+testShuffle_memory (asan)  . . [4 pts]  - passed
+testShuffleEmpty_memory (asan) [3 pts]  - passed
+testShuffle20_memory (asan)  . [5 pts]  - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

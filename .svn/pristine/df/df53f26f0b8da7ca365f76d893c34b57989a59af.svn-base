@@ -1,0 +1,25 @@
+Exam report for Adam Poindexter
+===============================
+
+Scores
+------
+
+  Problem                   Points
+  ----------------------- --------
+  constructors-1b                4
+  constructors-3a                4
+  km-arrays-1c                   0
+  km-firstclass-1d               4
+  km-pointersintro-2a            4
+  passbyvalue-4a                 4
+  km-declarationopts-2b          4
+  km-makefile-1a                 3
+  rtriangle                     18
+
+Total score: 45/50 (90%)
+
+Code Problem Test Output
+------------------------
+
+See `tests.txt` (or `tests-1.txt` and `tests-2.txt`) for autograder test
+outputs.

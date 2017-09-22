@@ -1,0 +1,99 @@
+CD to .. 
+/home/mattox/repos/fa16-exam1-grading/submissions/pondxtr2
+####################################################
+##                                                ##
+##     Grading question exam-1-code-rtriangle     ##
+##                                                ##
+####################################################
+Grader dir is /home/mattox/repos/fa16-exam1-grading/code-grading/scripts
+qid is exam-1-code-rtriangle
+shape is rtriangle
+test_dir is /home/mattox/repos/fa16-exam1-grading/code-grading/scripts/tests/rtriangle
+fullTmpDir = /home/mattox/repos/fa16-exam1-grading/submissions/pondxtr2/grade-rtriangle.7qC
+:: Compiling...
+g++ -std=c++0x -c -g -O0 -Wall -Wextra -Wno-unused-function   -c -o rtriangle.o rtriangle.cpp
+:: Compiled successfully!
+:: Compiling provided code...
+
+:: Compiling test_constructor_base.
+:: Running test_constructor_base.
+Constructing RTriangle with base=10 and height=20
+Expected: RTriangle(base=10, height=?)
+Got:      RTriangle(base=10, height=20)
+:: Passed test_constructor_base.
+
+:: Compiling test_constructor_height.
+:: Running test_constructor_height.
+Constructing RTriangle with base=10 and height=20
+Expected: RTriangle(base=?, height=20)
+Got:      RTriangle(base=10, height=20)
+:: Passed test_constructor_height.
+
+:: Compiling test_default_constructor_base.
+:: Running test_default_constructor_base.
+Constructing default RTriangle
+Expected: RTriangle(base=4, height=?)
+Got:      RTriangle(base=4, height=1)
+:: Passed test_default_constructor_base.
+
+:: Compiling test_default_constructor_height.
+:: Running test_default_constructor_height.
+Constructing default RTriangle
+Expected: RTriangle(base=?, height=1)
+Got:      RTriangle(base=4, height=1)
+:: Passed test_default_constructor_height.
+
+:: Compiling test_default_hypotenuse_length.
+:: Running test_default_hypotenuse_length.
+Constructing default RTriangle
+Expected: hypotenuse_length() = 4.12311
+Got:      hypotenuse_length() = 4.12311
+:: Passed test_default_hypotenuse_length.
+
+:: Compiling test_focus_hypotenuse_length_1.
+:: Running test_focus_hypotenuse_length_1.
+Constructing RTriangle with base=1 and height=2
+Expected: hypotenuse_length() = 2.23607
+Got:      hypotenuse_length() = 2.23607
+:: Passed test_focus_hypotenuse_length_1.
+
+:: Compiling test_focus_hypotenuse_length_2.
+:: Running test_focus_hypotenuse_length_2.
+Constructing RTriangle with base=1 and height=10
+Expected: hypotenuse_length() = 10.0499
+Got:      hypotenuse_length() = 10.0499
+:: Passed test_focus_hypotenuse_length_2.
+
+:: Compiling test_focus_hypotenuse_length_3.
+:: Running test_focus_hypotenuse_length_3.
+Constructing RTriangle with base=5 and height=4
+Expected: hypotenuse_length() = 6.40312
+Got:      hypotenuse_length() = 6.40312
+:: Passed test_focus_hypotenuse_length_3.
+
+:: Compiling test_focus_hypotenuse_length_4.
+:: Running test_focus_hypotenuse_length_4.
+Constructing RTriangle with base=3 and height=2
+Expected: hypotenuse_length() = 3.60555
+Got:      hypotenuse_length() = 3.60555
+:: Passed test_focus_hypotenuse_length_4.
+
+Grade for question exam-1-code-rtriangle: 100/100
+
+
+~ ~ ~
+
+Grade: 100
+
+Details:
+test,grade
+rtriangle_compiled,1
+rtriangle_test_constructor_base,1
+rtriangle_test_constructor_height,1
+rtriangle_test_default_constructor_base,1
+rtriangle_test_default_constructor_height,1
+rtriangle_test_default_hypotenuse_length,1
+rtriangle_test_focus_hypotenuse_length_1,1
+rtriangle_test_focus_hypotenuse_length_2,1
+rtriangle_test_focus_hypotenuse_length_3,1
+rtriangle_test_focus_hypotenuse_length_4,1

@@ -1,0 +1,23 @@
+Grading r29756 by pondxtr2 committed on Sun Oct  9 21:00:41 CDT 2016
+Monad Autograder
+Testing lab_trees at 2016-10-10 00:20:30
+
+"I've seen it on Google Maps; I think I know what I'm talking about" ~ Kyle Johnson
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+test_isOrdered  . [33 pts] - passed
+test_mirror . . . [33 pts] - passed
+test_printPaths . [34 pts] - passed
+test_sumDistances [25 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 125
+

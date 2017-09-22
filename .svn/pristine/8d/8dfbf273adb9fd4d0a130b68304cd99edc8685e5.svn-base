@@ -1,0 +1,134 @@
+#include "maze.h"
+#include "dsets.h"
+#include <tuple>
+#include <random>
+#include <queue>
+#include <utility>
+using namespace std;
+
+SquareMaze::SquareMaze() {}
+
+void SquareMaze::makeMaze(int width, int height)
+{
+    if(!maze.empty())
+        maze.erase(maze.begin(), maze.end());
+
+    vector<tuple<int, int, bool>> walls;
+
+    for(int y = 0; y < height; y++) {
+        maze.push_back(vector<square>());
+        for (int x = 0; x < width; x++) {
+            maze[y].push_back(square());
+            //0 is right, 1 is down
+            walls.push_back(make_tuple(x, y, 0));
+            walls.push_back(make_tuple(x, y, 1));
+        }
+    }
+
+    random_shuffle(walls.begin(), walls.end());
+    cycles.addelements(width * height);
+
+    while(!walls.empty()) {
+        int x = get<0>(walls.back());
+        int y = get<1>(walls.back());
+        bool dir = get<2>(walls.back());
+        walls.pop_back();
+
+        if((y >= height - 1 && dir) || (x >= width - 1 && !dir))
+            continue;
+        int idx = width * y + x;
+        int newIdx = width * (y + dir) + (x + !dir);
+
+        if(cycles.find(idx) == cycles.find(newIdx)) //If in same cycle dont make wall
+            continue;
+        cycles.setunion(idx, newIdx);
+        setWall(x,y,dir,false);
+    }
+}
+
+bool SquareMaze::canTravel(int x, int y, int dir) const
+{
+    if(dir == 0) {
+        if(x >= (int)maze[0].size() - 1 || maze[y][x].right)
+            return false;
+    } else if(dir == 1) {
+        if(y >= (int)maze.size() - 1 || maze[y][x].down)
+            return false;
+    } else if(dir == 2) {
+        if(x == 0 || maze[y][x-1].right)
+            return false;
+    } else {
+        if(y == 0 || maze[y-1][x].down)
+            return false;
+    }
+    return true;
+}
+
+void SquareMaze::setWall(int x, int y, int dir, bool exists)
+{
+    if(!exists) {
+        if(dir)
+            maze[y][x].down = false;
+        else
+            maze[y][x].right = false;
+    }
+}
+
+vector<int> SquareMaze::solveMaze()
+{
+    queue<pair<int, int>> bfs;
+    bfs.push(make_pair(0, 0));
+    int bestDist = 0;
+    pair<int,int> bestEnd;
+
+    for(size_t xit = 0; xit < maze[0].size(); xit++) {
+        int dist = 0;
+        pair<int,int> target(xit,maze.size() - 1);
+        while (!bfs.empty()) {
+            if(bfs.front() == target) {
+                if(dist > bestDist) {
+                    bestDist = dist;
+                    bestEnd = make_pair(xit, maze.size() - 1);
+                }
+                break;
+            }
+            pair<int,int> curr = bfs.front();
+            bfs.pop();
+            dist++;
+            if(canTravel(curr.first, curr.second, 0))
+                bfs.push(make_pair(curr.first + 1, curr.second));
+            if(canTravel(curr.first, curr.second, 1))
+                bfs.push(make_pair(curr.first, curr.second + 1));
+            if(canTravel(curr.first, curr.second, 2))
+                bfs.push(make_pair(curr.first - 1, curr.second));
+            if(canTravel(curr.first, curr.second, 3))
+                bfs.push(make_pair(curr.first, curr.second - 1));
+
+        }
+    }
+
+}
+
+PNG* SquareMaze::drawMaze() const
+{
+    PNG* ret = new PNG(maze[0].size()*10 + 1, maze.size()*10 + 1);
+    for(size_t i = 0; i < ret->height(); i++)
+        *(*ret)(0, i) = RGBAPixel(0, 0, 0);
+
+    for(size_t i = 9; i < ret->width(); i++)
+        *(*ret)(i, 0) = RGBAPixel(0, 0, 0);
+
+    for(size_t y = 0; y < maze.size(); y++) {
+        for(size_t x = 0; x < maze[0].size(); x++) {
+            if(maze[y][x].right) {
+                for(int i = 0; i <= 10; i++)
+                    *(*ret)((x + 1) * 10, (y * 10) + i) = RGBAPixel(0,0,0);
+            }
+            if(maze[y][x].down) {
+                for(int i = 0; i <=10; i++)
+                    *(*ret)((x * 10) + i, (y + 1) * 10) = RGBAPixel(0,0,0);
+            }
+        }
+    }
+    return ret;
+}

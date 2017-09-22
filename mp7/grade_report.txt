@@ -1,0 +1,39 @@
+Grading r59152 by pondxtr2 committed on Mon Dec  5 17:58:57 CST 2016
+Monad Autograder
+Testing mp7 at 2016-12-06 01:20:05
+
+"I can calculate the motions of the heavenly bodies, but not the madness of people." ~ Isaac Newton
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+addElements1  . . . . . . [5 pts] - passed
+addElements2  . . . . . . [5 pts] - passed
+testFindAndSetUnion1  . . [5 pts] - passed
+testFindAndSetUnion2  . . [5 pts] - passed
+testFindAndSetUnion3  . . [5 pts] - passed
+testMakeSmallMaze . . . . [5 pts] - passed
+testMakeMazeConnected . . [5 pts] - passed
+testMakeMazeAcyclic . . . [5 pts] - passed
+testMakeMazeTree1000  . . [5 pts] - passed
+testMakeMazeRandom  . . . [5 pts] - passed
+testSolveMazeValidPath  . [5 pts] - passed
+testSolutionBottomRow . . [5 pts] - passed
+testSolutionCorrectSquare [5 pts] - passed
+testSolveMazeSmall  . . . [5 pts] - passed
+testSolveMazeLarge  . . . [5 pts] - FAILED
+testDrawMazeSmall . . . . [5 pts] - passed
+testDrawMazeMed . . . . . [5 pts] - passed
+testDrawMazeLarge . . . . [5 pts] - passed
+testDrawSolutionMed . . . [5 pts] - passed
+testDrawSolutionLarge . . [5 pts] - FAILED
+
+
+Total score...
+================================================================
+TOTAL SCORE: 90
+
