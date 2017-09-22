@@ -1,3 +1,0 @@
-@INCLUDE      = ../doxygen/doxygen.conf
-PROJECT_NAME  = "lab_intro"
-PROJECT_BRIEF = "Ineluctable Introduction"

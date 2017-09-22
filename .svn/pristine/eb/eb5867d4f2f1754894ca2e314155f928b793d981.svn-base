@@ -1,3 +1,0 @@
-@INCLUDE      = ../doxygen/doxygen.conf
-PROJECT_NAME  = "lab_graphs"
-PROJECT_BRIEF = "Gangnam-Style Graphs"

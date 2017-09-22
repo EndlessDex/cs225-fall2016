@@ -1,3 +1,0 @@
-@INCLUDE      = ../doxygen/doxygen.conf
-PROJECT_NAME  = "MP 1"
-PROJECT_BRIEF = "Image Manipulation I"

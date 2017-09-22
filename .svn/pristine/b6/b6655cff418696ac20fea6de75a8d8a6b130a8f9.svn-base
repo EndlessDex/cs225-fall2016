@@ -1,4 +1,0 @@
-@INCLUDE        = ../doxygen/doxygen.conf
-PROJECT_NAME    = "MP5"
-PROJECT_BRIEF   = "Image Compression"
-EXTRACT_PRIVATE = YES

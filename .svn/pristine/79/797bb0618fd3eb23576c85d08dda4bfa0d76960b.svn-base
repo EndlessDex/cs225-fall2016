@@ -1,4 +1,0 @@
-@INCLUDE        = ../doxygen/doxygen.conf
-PROJECT_NAME    = "lab_btree"
-PROJECT_BRIEF   = "Belligerent BTrees"
-EXTRACT_PRIVATE = YES

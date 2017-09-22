@@ -1,4 +1,0 @@
-@INCLUDE        = ../doxygen/doxygen.conf
-PROJECT_NAME    = "lab_hash"
-PROJECT_BRIEF   = "Hellish Hash Tables"
-EXTRACT_PRIVATE = YES
